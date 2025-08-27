@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda - FashionSport</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 50px;
+      background-color: #f2f2f2;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-text a {
+      background-color: #111;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .hero-image img {
+      width: 500px;
+      border-radius: 10px;
+    }
+
+    .produk {
+      padding: 40px 50px;
+    }
+
+    .produk h2 {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .produk-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .produk-item {
+      width: calc(25% - 20px);
+      background-color: #fafafa;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .produk-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .produk-item h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .produk-item p {
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-text, .hero-image {
+        max-width: 100%;
+      }
+
+      .produk-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="../Web_Penjualan/asset/logoR.jpg" alt="Logo Brand" />
+    </div>
+    <nav>
+      <a href="beranda.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Tampil Sporty & Stylish RezkyThrift</h1>
+      <p>Temukan koleksi terbaru dari brand fashion olahraga terbaik. Kualitas premium, desain modern.</p>
+      <a href="produk.html">Belanja Sekarang</a>
+    </div>
+    <div class="hero-image">
+      <img src="../Web_Penjualan/asset/ba.jpg" alt="Fashion Sport" />
+    </div>
+  </section>
+
+  <section class="produk">
+    <h2>Produk Terbaru</h2>
+    <div class="produk-grid">
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/bluejordan.jpg" alt="Sepatu" />
+        <h3>Nike jordan blue white</h3>
+        <p>Rp 1.299.000</p>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/windbreaker.jpg" alt="Jaket" />
+        <h3>Jaket Windbreaker Nike</h3>
+        <p>Rp 799.000</p>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/6c8508f9-a231-4250-8fab-adfbd71fdcab.jpg" alt="sepatu" />
+        <h3>Jordan 4 yellow</h3>
+        <p>Rp 5.999.000</p>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/sbdunk.jpg" alt="sepatu" />
+        <h3>nike sb dunk panda</h3>
+        <p>Rp 1.399.000</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Halaman Pembelian - FashionSport</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .product-summary {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .product-summary img {
+      width: 120px;
+      border-radius: 6px;
+    }
+
+    .product-details {
+      flex: 1;
+    }
+
+    .product-details h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .product-details p {
+      color: #666;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #111;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        margin-left: 15px;
+      }
+
+      .product-summary {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .product-summary img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="../Web_Penjualan/asset/logoR.jpg" alt="Logo Brand" />
+    </div>
+    <nav>
+      <a href="beranda.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Detail Pembelian</h1>
+
+    <div class="product-summary">
+      <img src="../Web_Penjualan/asset/airforce.jpg" alt="air force">
+      <div class="product-details">
+        <h2>nike air force black</h2>
+        <p>Harga: Rp 650.000</p>
+        <p>Kuantitas: 1</p>
+      </div>
+    </div>
+
+    <form action="hasil.html" method="POST">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+
+      <label for="alamat">Alamat Pengiriman</label>
+      <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap" required></textarea>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+
+      <label for="metode">Metode Pembayaran</label>
+      <select id="metode" name="metode" required>
+        <option value="">-- Pilih Metode --</option>
+        <option value="transfer">Transfer Bank</option>
+        <option value="cod">Bayar di Tempat (COD)</option>
+        <option value="e-wallet">E-Wallet</option>
+        <option value="kartu">Kartu Kredit/Debit</option>
+      </select>
+
+      <button type="submit">Lanjutkan Pembayaran</button>
+    </form>
+  </div>
+
+</body>
+</html>

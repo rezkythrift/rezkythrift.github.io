@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produk - FashionSport - Rezkythrift</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px 50px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .produk-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .produk-item {
+      width: calc(25% - 20px);
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .produk-item:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .produk-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .produk-item h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .produk-item p {
+      margin-bottom: 12px;
+      color: #888;
+    }
+
+    .produk-item button {
+      background-color: #111;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .produk-item button:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .produk-item {
+        width: 100%;
+      }
+
+      nav a {
+        margin-left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="../Web_Penjualan/asset/logoR.jpg" alt="Logo Brand" />
+    </div>
+    <nav>
+      <a href="beranda.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Koleksi Produk</h1>
+    <div class="produk-grid">
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/bluejordan.jpg" alt="Sepatu Running" />
+        <h3>nike jordan 1 blue white</h3>
+        <p>Rp 1.299.000</p>
+        <a href="beli1.html">
+        <button>Beli</button>
+        </a>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/techsyna.jpg" alt="Jaket Sport" />
+        <h3>Nike Tech x syna</h3>
+        <p>Rp 8.599.000</p>
+        <a href="beli2.html">
+        <button>Beli</button>
+        </a>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/tech.jpg" alt="tech" />
+        <h3>Nike tech full set</h3>
+        <p>Rp 5.299.000</p>
+        <a href="beli3.html">
+        <button>Beli</button>
+        </a>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/sbdunk.jpg" alt="sepatu" />
+        <h3>nike sb dunk panda</h3>
+        <p>Rp 1.399.000</p>
+        <a href="beli4.html">
+        <button>Beli</button>
+        </a>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/airforce.jpg" alt="sepatu" />
+        <h3>air force black</h3>
+        <p>Rp 650.000</p>
+        <a href="beli5.html">
+        <button>Beli</button>
+        </a>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/sendalalin.jpg" alt="sendal" />
+        <h3>sendal nike ori</h3>
+        <p>Rp 2.000.000</p>
+        <a href="beli6.html">
+        <button>Beli</button>
+        </a>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/niketshirt.jpg" alt="kaos" />
+        <h3>T-shirt nike</h3>
+        <p>Rp 500.000</p>
+        <a href="beli7.html">
+        <button>Beli</button>
+        </a>
+      </div>
+      <div class="produk-item">
+        <img src="../Web_Penjualan/asset/jordankid.jpg" alt="kaos" />
+        <h3>jordan fullset kid size</h3>
+        <p>Rp 900.000</p>
+        <a href="beli8.html">
+        <button>Beli</button>
+        </a>
+      </div>
+      <!-- Tambahkan lebih banyak produk jika perlu -->
+    </div>
+  </div>
+
+</body>
+</html>
